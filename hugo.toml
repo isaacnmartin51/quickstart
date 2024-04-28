@@ -1,4 +1,25 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ananke'
+title = 'A Personal Blog'
+theme = 'PaperMod'
+
+[params.homeInfoParams]
+Title = "Hi there 👋"
+Content = """
+    Welcome to my blog!
+    My name is Isaac Martin and I am a software engineer with over 7 years of 
+    experience and a passion for learning new things.
+
+    I've started this blog to document what I've learned, I hope you will find it 
+    helpful!
+    """
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/isaacnmartin51"
+
+[[menu.main]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 20
